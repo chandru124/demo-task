@@ -1,0 +1,37 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            changing bg color
+        </title>
+    </head> 
+      
+    <body style = "text-align:center;">
+        <p>click the below button to change bg color</p>
+           
+       <button onclick = "blue()"> 
+            red
+        </button><br><br><br><br><br>
+        <button onclick = "black()"> 
+            blue
+        </button><br><br><br><br><br>
+        <button onclick = "red()"> 
+            black
+        </button><br><br><br><br><br>
+          <script>
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              function blue() {
+                changeColor('blue');
+              }         
+            function black() {
+                changeColor('#000000');
+                }         
+            function red() {
+                changeColor('red');
+                
+            }         
+        </script> 
+    </body> 
+    </html>
